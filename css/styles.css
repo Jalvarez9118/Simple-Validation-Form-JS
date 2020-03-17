@@ -1,0 +1,73 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ddb517; 
+}
+
+.wrapper{
+    position: absolute; /*this is relative to the body */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* centers the form wrapper */ 
+    max-width: 350px; 
+    width: 100%; /* this combined with max-width makes it responsive */ 
+    background: #fff; /* form background to see it */ 
+    padding: 25px; 
+    border-radius: 5px; 
+    box-shadow: 4px 4px 2px rgba(254, 236, 164, 1); 
+}
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    color: #332902; 
+}
+
+.wrapper .input_field{
+    margin-bottom: 10px; 
+}
+
+/* target inputfield text type and textarea */
+.wrapper .input_field input[type="text"], 
+.wrapper textarea{
+    width: 100%; 
+    border: 1px solid #e0e0e0; 
+    padding: 10px; 
+}
+
+.wrapper textarea{
+    height: 80px;
+    resize: none; /* this prevents manual resizing */ 
+}
+
+.wrapper .btn input[type="submit"]{
+    border: 0; 
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%; 
+    background: #ddb517;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+/* error message div */
+.wrapper #error_message{
+    margin-bottom: 20px; 
+    padding: 0px; /* hidden display by default */ 
+    background: #fe8b8e; 
+    text-align: center; 
+    font-size: 14px; 
+    transition: all .5s ease; /* smooth transition when error displays */
+}
